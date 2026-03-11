@@ -64,7 +64,12 @@ Example:
 
 `2integral_serial_timer.c`
 
-Same numerical integration as the serial version, but also measures **execution time** using `gettimeofday()`.
+This program performs the same numerical integration as the basic serial
+implementation, but also measures the **execution time** of the computation
+using `gettimeofday()`.
+
+To improve numerical precision, this version uses **`long double` arithmetic**
+for the integration variables and accumulation of the summation.
 
 Input:
 ```
